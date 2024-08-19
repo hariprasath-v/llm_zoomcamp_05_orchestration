@@ -20,7 +20,6 @@ def elasticsearch(documents, *args, **kwargs):
     dimensions = kwargs.get('dimensions')
 
     
-
     es_client = Elasticsearch(connection_string)
 
     print(f'Connecting to Elasticsearch at {connection_string}')

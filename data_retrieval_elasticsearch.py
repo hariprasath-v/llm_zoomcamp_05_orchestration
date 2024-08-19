@@ -28,11 +28,6 @@ def search(*args, **kwargs) -> List[Dict]:
                         "fields": ["question^5", "text", "section"],
                         "type": "best_fields"
                     }
-                },
-                "filter": {
-                    "term": {
-                        "course": 'llm-zoomcamp'
-                    }
                 }
             }
         }

@@ -5,7 +5,6 @@ import requests
 import docx
 
 
-
 if 'data_loader' not in globals():
     from mage_ai.data_preparation.decorators import data_loader
 if 'test' not in globals():
@@ -75,7 +74,7 @@ def load_data(*args, **kwargs):
         return questions
 
     faq_documents = {
-                'llm-zoomcamp': '1qZjwHkvP0lXHiE4zdbWyUXSVfmVGzougDD6N37bat3E',
+                'llm-zoomcamp': '1T3MdwUvqCL3jrh3d3VCXQ8xE0UqRzI3bfgpfBq3ZWG0',
             }
     documents = []
 
