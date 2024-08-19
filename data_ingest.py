@@ -84,7 +84,7 @@ def load_data(*args, **kwargs):
         course_documents = read_faq(file_id)
         documents.append({'course': course, 'documents': course_documents})
     print('Length:',len(documents))
-    return documents
+    return [documents]
 
 @test
 def test_output(output, *args) -> None:
