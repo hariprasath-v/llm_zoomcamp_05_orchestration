@@ -14,6 +14,7 @@ def elasticsearch(documents, *args, **kwargs):
     current_time = datetime.now().strftime("%Y%m%d_%M%S")
     index_name = f"{index_name_prefix}_{current_time}"
     print("index name:", index_name)
+    #change the name according to your pipeline's name 
     set_global_variable('ominous_maelstrom', 'index_name', index_name)
     number_of_shards = kwargs.get('number_of_shards', 1)
     number_of_replicas = kwargs.get('number_of_replicas', 0)
